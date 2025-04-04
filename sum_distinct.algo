@@ -1,0 +1,21 @@
+1. START
+2. DECLARE set1 = [3, 1, 7, 9]
+3. DECLARE set2 = [2, 4, 1, 9, 3]
+4. DECLARE sum = 0
+5. 
+6. // Check elements in set1 not in set2
+7. FOR EACH element IN set1 DO
+8.     IF element NOT IN set2 THEN
+9.         sum = sum + element
+10.    END IF
+11. END FOR
+12. 
+13. // Check elements in set2 not in set1
+14. FOR EACH element IN set2 DO
+15.     IF element NOT IN set1 THEN
+16.         sum = sum + element
+17.     END IF
+18. END FOR
+19. 
+20. PRINT "Sum of distinct elements: " + sum
+21. END
